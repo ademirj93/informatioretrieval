@@ -1,0 +1,6 @@
+dataset/*
+!dataset/.gitkeep
+Dataset_test/*
+!Dataset_test/.gitkeep
+querry/*
+!querry/.gitkeep
