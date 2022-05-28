@@ -63,3 +63,35 @@ for i in concatenar:
 
     dk += 1
     print(str((int(dk)/int(td))*100) + " %")
+
+    def media_pond (dict):
+    sum = 0
+    d = 0
+
+    comp = len(dict)
+
+    impar = comp % 2
+    end = (comp // 2) + impar 
+    weight = 1
+    dk = 0
+
+    for i in range(1, end+1):
+        
+        
+
+        sum += dict[i] * weight
+        sum += dict[(i+1)*-1] * weight
+
+        d += weight * 2
+
+        if (i == end & impar ==1):
+            sum -= dict[(i+1)* -1] * weight
+            d -= weight 
+        
+        weight += 1
+        
+        dk += 1
+        print(str((int(dk)/int(comp))*100) + " %")
+    return (sum/d)
+
+    keys = [e[0] for e in list(org_count.items()) if e[1] != 1]
